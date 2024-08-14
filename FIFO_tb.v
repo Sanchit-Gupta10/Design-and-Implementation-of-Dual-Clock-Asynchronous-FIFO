@@ -4,7 +4,7 @@ module FIFO_tb;
 
     // Parameters
     parameter DATA_SIZE = 8;
-    parameter ADDR_SIZE = 4;
+    parameter ADDR_SIZE = 6;
 
     // Signals for the FIFO instance
     reg w_en, w_clk, w_rst_n;
