@@ -56,14 +56,7 @@ read_pointer #(.ADDR_SIZE(4))
     end
 
     end
-// synchronizer r_ptr_sync_inst (
-//     .clk(r_clk),
-//     .rst(r_rst_n),
-//     .ack(r_ptr),
-// //    .rsp(rsp),
-//     // .ack_lvl_pulse(),
-//     .ack_double_FF(r_ptr_sync)
-// );
+
 
 //Write operation will give the Full flag
 write_pointer #(.ADDR_SIZE(4)) write_pointer_inst
@@ -77,14 +70,6 @@ write_pointer #(.ADDR_SIZE(4)) write_pointer_inst
     .w_rst_n(w_rst_n)
 );
 
-// synchronizer w_ptr_sync_inst (
-//     .clk(w_clk),
-//     .rst(w_rst_n),
-//     .ack(w_ptr),
-// //    .rsp(rsp),
-//     // .ack_lvl_pulse(),
-//     .ack_double_FF(w_ptr_sync)
-// );
 
 always@(posedge w_clk or negedge w_rst_n) begin
 
