@@ -1,6 +1,6 @@
  //DATA_SIZE and ADDR_SIZE can be used to define memory of the FIFO
 
-module FIFO #(parameter DATA_SIZE = 8 , parameter ADDR_SIZE = 4) 
+module FIFO #(parameter DATA_SIZE = 8 , parameter ADDR_SIZE = 6) 
 (   
     //Write operations
 	input w_en, w_clk, w_rst_n,     
